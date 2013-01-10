@@ -1,13 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development do
+  gem 'sqlite3'
+end
 
-gem 'sqlite3'
-
-
+group :test do
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'cucumber-rails-training-wheels'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
