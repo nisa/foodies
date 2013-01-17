@@ -1,12 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :development do
-  gem 'sqlite3'
-end
 
 group :test do
   gem 'database_cleaner'
