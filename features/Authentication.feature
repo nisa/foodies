@@ -1,4 +1,4 @@
-Feature : Authentication
+Feature: Authentication
   In order to manage my account
   As a registered user
   I want to log in and out
@@ -8,7 +8,7 @@ Feature : Authentication
      | email                 | password |
      | nisabalish@gmail.com  | secret   |
 
-  Scenario : Successful login
+  Scenario: Successful login
     Given I am not logged in
     And I am on the home page
     When I follow "Log in"
@@ -20,17 +20,12 @@ Feature : Authentication
     And I should see "Log out"
     And I should not see "Log in"
 
-  Scenario : Unsuccessful log in
-    Given I am not logged in
-    And I am on the home page
-    When I follow "Log in"
-    And I fill in the following:
-     | Email-id | nisabalish@gmail.com |
-     | Password | secrat               |
-    When I press "log in"
+  Scenario: Invalid email address or password
+    When I fill in an invalid email address or password           |
+    And I press "Log in"
     Then I should see "Sorry!! Invalid credentials"
 
-  Scenario : Successful log out
+  Scenario: Successful log out
     Given I am logged in as "nisabalish@gmail.com"
     And I am on the user page
     When I follow "Log out"
