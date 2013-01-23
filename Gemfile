@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-gem 'pg'
+gem 'mysql2'
+gem "bcrypt-ruby", "~> 3.0.1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,6 +13,11 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'cucumber-rails-training-wheels'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+
 end
 # Gems used only for assets and not required
 # in production environments by default.

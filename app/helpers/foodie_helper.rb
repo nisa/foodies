@@ -1,0 +1,2 @@
+module FoodieHelper
+end

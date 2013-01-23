@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+body{
+	background: #d7dee4 url('../images/purty_wood.png') ;
+	padding: 60px 0 0 0;
+}
+h1{
+  font-family: 'Open Sans';
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  text-shadow: 0px 2px 4px rgba(150, 150, 150, 1);
+}
+.container{
+	width: 600px;
+	margin: auto;
+}
+ 
+.banner img{
+	width: 600px;
+	border-radius:18px;
+	-webkit-border-radius:18px;
+	-moz-border-radius:18px;
+	-webkit-box-shadow: 0px 8px 23px rgba(50, 50, 50, 0.62);
+	-moz-box-shadow:    0px 8px 23px rgba(50, 50, 50, 0.62);
+	box-shadow:         0px 8px 23px rgba(50, 50, 50, 0.62);
+	border:2px solid #ddd;
+}
