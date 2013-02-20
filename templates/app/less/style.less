@@ -1,7 +1,96 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/static/fonts/lobster/v5/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
 body{
 	background: #eac085 url('../images/purty_wood.png') repeat;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Sans-serif;
+}
+h1{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: normal;
+}
+.pull-right{
+	float: right; 
+}
+.pull-left{
+	float: left; 
 }
 .container{
-	width: 960px;
+	width: 95%;
 	margin: auto;
 }
+
+.brand{
+
+	width: 60%;
+	float: left;
+	padding: 80px 0 0 0;
+
+	 span{
+		font-size: 18px;
+		font-weight: normal;
+		font-family: 'Open Sans';
+		color: #fff;
+		display: table;
+		text-align: center;
+		background: #A6AD3C;
+		padding: 5px;
+		width: 80%;
+		margin: auto;
+		border-top: 3px solid #b3be06;
+
+		}
+		h1.logo{
+			font-family: 'Lobster';
+ 			color: #da4b4b;
+			text-shadow: 0px 3px 3px rgba(150, 150, 150, 1);
+			font-weight: normal;
+			font-size: 100px;
+			text-align: center;
+		}
+}
+.call-to-action{
+
+	width: 35%;
+	background: #c50900;
+ 	padding: 20px 0 10px 30px;
+	overflow: hidden;
+	margin: 20px 0;
+	border-top: 3px solid #ed3200;
+
+		h1{
+			color: #fff;			
+		}
+ }
+ .input{
+
+ 	margin: 10px 0px;
+
+ 	.textbox{
+ 		width: 300px;
+ 		height: 32px;
+ 		border: 0px;
+ 		padding: 2px 8px;
+ 		border-radius:2px;
+ 		font-size: 14px;
+ 	}
+ 	button{
+ 		width: 80px;
+ 		height: 32px;
+
+ 	}
+ }
