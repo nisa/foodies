@@ -1,3 +1,67 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/static/fonts/lobster/v5/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+.rounded-corners (@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.rounded-corners-only-bottom (@radius: 2px){
+ 	-moz-border-radius-bottomright: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+	-moz-border-radius-bottomleft: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+body{
+	background: #eac085 url('../images/purty_wood.png') repeat;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Sans-serif;
+}
+h1{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: normal;
+}
+.pull-right{
+	float: right; 
+}
+.pull-left{
+	float: left; 
+}
+.push-left{
+	margin-left: 15px;
+}
+.container{
+	width: 95%;
+	margin: auto;
+}
+
+button{
+	width: 80px;
+	height: 32px;
+	background: #A6AD3C;
+	color: #fff;
+	border: 2px solid #b3be06;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: 'Open Sans';
+}
 .highlights{
 	color: #fff;
 	overflow: hidden;
@@ -7,10 +71,28 @@
 	}
 }
 .header{
-	background: #000;
-	margin: 5px 0px;
+ 	margin: 0px 0 5px;
 	padding: 8px 12px;
-	color: #fff;
+	overflow: hidden;
+
+		.logo{
+			font-family: 'Lobster';
+ 			color: #da4b4b;
+			text-shadow: 0px 2px 2px #980b04;
+			font-weight: normal;
+			font-size: 50px;
+ 
+			i{
+				font-size: 25px;
+				background: #da4b4b;
+				color: #eee;
+				.rounded-corners(50%);
+				padding: 15px 20px;
+ 				position: relative;
+				top: -8px;
+				left: -10px;
+			}
+		}
 }
 .hero-unit{
 	margin-bottom: 10px;
@@ -26,4 +108,30 @@
 	background: blue;
  	padding: 8px 12px;
  	color: #fff;
+}
+ul.nav{ 
+	background: rgba(0,0,0,0.4);
+	padding: 8px 12px;
+	position: relative;
+	top: -8px;
+	overflow: hidden;
+ 	.rounded-corners-only-bottom(8px);
+ 	li{
+ 		float: left;
+ 		margin-right: 8px;
+
+ 		
+ 	}
+	a{
+		 color: #cdda00;
+
+		 &:hover{
+ 			background: none;
+ 			text-decoration: underline;
+ 		}
+ 		i{
+ 			color: #fff;
+ 			text-decoration: none;
+ 		}
+	}
 }
