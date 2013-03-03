@@ -17,7 +17,19 @@
   -o-border-radius: @radius;
   border-radius: @radius;
 }
-
+.rounded-corners-only-bottom (@radius: 2px){
+ 	-moz-border-radius-bottomright: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+	-moz-border-radius-bottomleft: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
 body{
 	background: #eac085 url('../images/purty_wood.png') repeat;
 	margin: 0px;
@@ -54,112 +66,92 @@ button{
 	font-size: 13px;
 	font-weight: normal;
 	font-family: 'Open Sans';
+
+	&.large{
+		width: 420px;
+		height: 50px;
+		font-size: 20px;
+	}
+	&:hover{
+		opacity: 0.8;
+	}
 }
- 
-.brand{
+.highlights{
+	color: #000;
+	overflow: hidden;
+	clear: left;
 
-	width: 60%;
-	float: left;
-	padding: 35px 0 0 0;
+  .span4{
+	background: white;
+	padding:10px;
+	box-shadow: 0px 2px 8px #888;
+	}
+}
+.header{
+ 	margin: 0px 0 10px;
+	padding: 8px 0 0 14px;
+	overflow: hidden;
 
-	 span{
-		font-size: 18px;
-		font-weight: normal;
-		font-family: 'Open Sans';
-		color: #fff;
-		display: table;
-		text-align: center;
-		background: #A6AD3C;
-		padding: 5px;
-		width: 83%;
-		margin: auto;
-		border-top: 3px solid #b3be06;
-
-		}
-		.description{
-			width: 80%;
-			display: table;
-			margin: auto;
-			padding: 0 8px 8px 8px;
-			line-height: 25px;
-			font-size: 15px;
-			color: #fff;
-			text-shadow: 0px 1px 5px #222;
-
-			img{
-				width: 100%;
-			}
-			 
-		}
 		.logo{
 			font-family: 'Lobster';
  			color: #da4b4b;
 			text-shadow: 0px 2px 2px #980b04;
 			font-weight: normal;
-			font-size: 100px;
-			text-align: center;
-
+			font-size: 50px;
+ 
 			i{
-				font-size: 55px;
+				font-size: 25px;
 				background: #da4b4b;
 				color: #eee;
 				.rounded-corners(50%);
-				padding: 20px 30px;
+				padding: 15px 20px;
  				position: relative;
-				top: -12px;
+				top: -8px;
 				left: -10px;
 			}
 		}
-		
-
 }
-.call-to-action{
+.hero-unit{
+	margin-bottom: 10px;
+	padding: 12px;
 
-	width: 31%;
-	background: #d6332b;
- 	padding: 10px 0 10px 30px;
-	overflow: hidden;
-	margin: 20px 0;
-	border-top: 3px solid #ed3200;
-
-		h1{
-			color: #fff;			
+		img{
+			width: 50%;
 		}
-		a.social-icons{
- 			text-decoration: none;
- 			margin-left: 0px;
-
- 			img{
- 				width: 170px;
- 			}
- 		}
- }
- .input{
-
- 	margin: 10px 0px;
- 	font-size: 12px;
+	
+}
+.imp-links{
+	margin: 15px 0px;  	 
  	color: #fff;
+ 	overflow: hidden;
 
- 	a{
- 		color: #fff;
+ 	ul li{
+
  	}
- 	.textbox{
- 		width: 350px;
- 		height: 32px;
- 		border: 0px;
- 		padding: 2px 8px;
- 		.rounded-corners;
- 		font-size: 14px;
+}
+ul.nav{ 
+	background: rgba(0,0,0,0.4);
+	padding: 8px 12px;
+	position: relative;
+	top: -8px;
+	overflow: hidden;
+ 	.rounded-corners-only-bottom(8px);
+ 	li{
+ 		float: left;
+ 		margin-right: 8px;
+
+ 		
  	}
+	a{
+		 color: #cdda00;
 
- }
- .footer{
-	font-size: 13px;
-	color: #fff;
-	text-shadow: 0px 1px 3px #222;
-	text-align: center;
-	padding: 15px 0px;
-
- }
-
- 
+		 &:hover{
+ 			background: none;
+ 			text-decoration: underline;
+ 		}
+ 		i{
+ 			color: #fff;
+ 			text-decoration: none;
+ 		}
+	}
+}
